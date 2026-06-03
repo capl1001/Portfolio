@@ -1,0 +1,7 @@
+body {
+  background-image: url("../img/image1.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  background-color: var(--color-bg1);
+}
