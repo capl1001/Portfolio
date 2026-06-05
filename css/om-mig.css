@@ -8,4 +8,33 @@ h1 {
   margin-top: 6rem;
   margin-bottom: 3rem;
   padding-left: 1rem;
+  font-size: 64px;
+}
+.Photobooth {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  align-items: center;
+  justify-items: center;
+}
+.Photobooth img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.img1 {
+  transform: translateX(10px);
+  z-index: 1;
+  position: relative;
+}
+.img3 {
+  z-index: 2;
+  position: relative;
+  max-width: 250px;
+  height: 350px;
+}
+.img2 {
+  transform: translateX(-40px);
+  z-index: 1;
+  position: relative;
 }
