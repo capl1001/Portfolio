@@ -13,4 +13,18 @@ body {
 h1 {
   margin-top: 6rem;
   padding-left: 1rem;
+  font-size: xx-large;
+}
+.img {
+  display: grid;
+  justify-content: center;
+  gap: 3rem;
+}
+.img img {
+  width: 250px;
+  /* max-width: 450px; */
+  height: auto;
+  object-fit: cover;
+  display: grid;
+  justify-content: center;
 }
