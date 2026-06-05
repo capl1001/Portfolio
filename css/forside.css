@@ -1,6 +1,11 @@
 body {
-  background-image: url("../img/image1.png");
+  background-image: url("../img/baggrund2.png");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+}
+
+.h1 {
+  display: flex;
+  justify-content: flex-end;
 }

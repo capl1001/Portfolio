@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Asset&display=swap");
+
+.projekter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.projekter img,
+.projekter a {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: block;
+}
+.projekter img {
+  object-fit: cover;
+}
+.projekter a {
+  font-family: "Asset", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.T1,
+.T4 {
+  background-color: var(--color-bg_t1-t4);
+  color: var(--color-h3_t1-t4);
+}
+.T2,
+.T5 {
+  background-color: var(--color-bg_t2-t5);
+  color: var(--color-h3_t2-t5);
+}
+.T3,
+.T6 {
+  background-color: var(--color-bg_t3-t6);
+  color: var(--color-h3_t3-t6);
+}
