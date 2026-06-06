@@ -40,3 +40,27 @@ h1 {
   background-color: var(--color-bg_t3-t6);
   color: var(--color-h3_t3-t6);
 }
+.cta {
+  display: inline-block;
+  color: #687178;
+  margin-top: 6rem;
+  padding-left: 1rem;
+  position: relative;
+}
+.cta::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #000;
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+}
+.cta:hover {
+  color: #000;
+}
+.cta:hover::after {
+  transform: scaleX(1);
+}
