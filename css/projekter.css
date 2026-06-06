@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Asset&display=swap");
-h1 {
+.h1-projekter {
   margin-top: 6rem;
   margin-bottom: 3rem;
   padding-left: 1rem;
+}
+h1 {
+  margin-bottom: 3rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  overflow-wrap: break-word;
 }
 .projekter {
   display: grid;
@@ -24,6 +30,11 @@ h1 {
   justify-content: flex-end;
   padding: 1rem;
   box-sizing: border-box;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+.projekter a:hover {
+  transform: scale(1.08);
 }
 .T1,
 .T4 {
@@ -39,4 +50,28 @@ h1 {
 .T6 {
   background-color: var(--color-bg_t3-t6);
   color: var(--color-h3_t3-t6);
+}
+.cta {
+  display: inline-block;
+  color: #687178;
+  margin-top: 6rem;
+  padding-left: 1rem;
+  position: relative;
+}
+.cta::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #000;
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+}
+.cta:hover {
+  color: #000;
+}
+.cta:hover::after {
+  transform: scaleX(1);
 }
