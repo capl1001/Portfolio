@@ -4,7 +4,6 @@ h1 {
   margin-bottom: 3rem;
   padding-left: 1rem;
 }
-
 .projekter {
   display: grid;
   grid-template-columns: 1fr 1fr;
