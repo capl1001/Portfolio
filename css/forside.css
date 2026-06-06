@@ -4,27 +4,41 @@ body {
   background-position: center;
   min-height: 100vh;
 }
-
-.h1 {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 0%;
-}
-h1 {
+.port {
   margin-top: 6rem;
-  padding-left: 1rem;
   font-size: xx-large;
+}
+.folio {
+  justify-self: end;
+  font-size: xx-large;
+}
+.hero {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 .img {
   display: grid;
-  justify-content: center;
-  gap: 3rem;
+  gap: 20px;
 }
 .img img {
   width: 250px;
-  /* max-width: 450px; */
   height: auto;
   object-fit: cover;
-  display: grid;
-  justify-content: center;
+  display: block;
+}
+@media (min-width: 800px) {
+  .img {
+    grid-template-columns: 1fr 1fr;
+  }
+  .img img {
+    width: 450px;
+    height: auto;
+  }
+  .port {
+    font-size: 64px;
+  }
+  .folio {
+    font-size: 48px;
+  }
 }
