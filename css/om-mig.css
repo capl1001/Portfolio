@@ -11,33 +11,45 @@ h1 {
   font-size: xxx-large;
 }
 .Photobooth {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 20px;
-  align-items: center;
-  justify-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 365px;
 }
 .Photobooth img {
-  width: 100%;
   object-fit: cover;
-  display: block;
+  height: 480px;
+  width: auto;
+  margin-left: 10px;
 }
-/* .img1 {
-  transform: translateX(10px);
-  z-index: 1;
-  position: relative;
+.img1 {
+  box-shadow: 7px 4px 8.9px rgba(55, 75, 89, 0.5);
 }
 .img3 {
-  z-index: 2;
-  position: relative;
-  max-width: 250px;
-  height: 350px;
+  transform: rotate(-8deg);
+  box-shadow: -7px -4px 8.9px rgba(55, 75, 89, 0.5);
 }
 .img2 {
-  transform: translateX(-40px);
-  z-index: 1;
+  transform: rotate(10deg) translateY(20px);
   position: relative;
-} */
+  z-index: 2;
+  box-shadow: 4px -2px 5px rgba(55, 75, 89, 0.5);
+}
 
 @media (min-width: 800px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Photobooth {
+    width: 600px;
+    height: auto;
+  }
+  .Photobooth img {
+    display: block;
+    height: 800px;
+    width: 100%;
+  }
+  .img2 {
+    transform: rotate(10deg) translateY(50px);
+  }
 }
