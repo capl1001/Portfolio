@@ -114,6 +114,16 @@ h1 {
   padding: 8px 14px;
   cursor: pointer;
   font-size: 15px;
+  border: solid 1px var(--color-h1);
+}
+.links {
+  display: grid;
+  padding: 1rem;
+  line-height: 1.5;
+  max-width: 65ch;
+  color: #687178;
+  text-decoration: underline;
+  text-decoration-color: #687178;
 }
 
 @media (min-width: 800px) {
