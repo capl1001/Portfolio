@@ -80,19 +80,40 @@ h1 {
 }
 .indhold {
   display: grid;
-  place-items: center;
+  justify-self: center;
 }
-.proces img {
+.slider {
+  width: 100%;
+  max-width: 330px;
+}
+.mySlides video {
+  width: 100%;
   height: 250px;
-  width: 330px;
-  margin: 20px;
   object-fit: fill;
 }
-.indhold video {
+.mySlides img {
+  width: 100%;
   height: 250px;
-  width: 300px;
-  margin: 20px;
-  object-fit: cover;
+  object-fit: fill;
+}
+
+/* pile container UNDER billedet */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+/* knapper */
+.prev,
+.next {
+  background: var(--color-header-bg);
+  color: var(--color-h1);
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 15px;
 }
 
 @media (min-width: 800px) {
@@ -103,12 +124,13 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .proces img {
-    height: 250px;
-    width: 300px;
+  .slider {
+    max-width: 500px;
   }
-  .indhold video {
-    height: 400px;
-    width: 550px;
+  .mySlides img {
+    height: 350px;
+  }
+  .mySlides video {
+    height: 350px;
   }
 }
