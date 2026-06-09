@@ -6,8 +6,7 @@ h1 {
   font-size: xx-large;
   overflow-wrap: break-word;
 }
-footer h3 {
-  font-family: "Asset", sans-serif;
+footer h2 {
   color: var(--color-h1);
   margin: 0;
   padding: 0;
