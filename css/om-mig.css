@@ -1,5 +1,5 @@
 body {
-  background-image: url("../img/baggrund2.png");
+  background-image: url("../img/baggrund2.webp");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -50,9 +50,10 @@ footer h3 {
 
 .kompetencer ul li {
   margin-left: 1rem;
+  font-family: "Tenor Sans", sans-serif;
   padding: 14px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   display: flex;
   align-items: center;
