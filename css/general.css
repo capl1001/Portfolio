@@ -102,7 +102,7 @@ nav.active .menu {
   width: 180px;
   height: 250px;
   z-index: 1;
-  border-radius: 10px 0px 0 10px;
+  border-radius: 0px 0px 0 10px;
 }
 nav.active .menu li {
   margin: 40px 20px;
